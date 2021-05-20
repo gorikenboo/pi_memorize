@@ -2,6 +2,20 @@
 <html lang="ja">
 
 <head>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+  <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+            TeX: { equationNumbers: { autoNumber: "AMS" }},
+            tex2jax: {
+              inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+              processEscapes: true
+            },
+            "HTML-CSS": { matchFontHeight: false },
+            displayAlign: "left",
+            displayIndent: "2em"
+          });
+        </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -16,7 +30,7 @@
 
   <main>
     <p>
-      円周率を覚えているだけ打ち込んでみよう
+      $\pi \pi$ 円周率を覚えているだけ打ち込んでみよう$\pi\pi$
     </p>
     <textarea id="text_area"></textarea>
     <div id="result"></div>
